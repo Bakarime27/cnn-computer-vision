@@ -1,4 +1,4 @@
-tensorflow-cpu==2.9.3
+tensorflow-cpu
 h5py
 opencv-python-headless
 numpy
