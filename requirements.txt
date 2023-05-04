@@ -1,5 +1,5 @@
 tensorflow-cpu==2.9.3
-h5py==2.10.0
-opencv-python-headless==4.4.0.42
+h5py
+opencv-python-headless==4.2.0.34
 numpy
-gradio==3.0.22
+gradio==3.2
