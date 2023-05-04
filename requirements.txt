@@ -1,5 +1,4 @@
 tensorflow-cpu
 h5py
 opencv-python-headless
-#numpy
-gradio==3.2
+gradio
