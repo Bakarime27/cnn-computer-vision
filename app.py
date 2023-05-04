@@ -27,9 +27,9 @@ def f1_m(y_true, y_pred):
 
 # Load model
 model = load_model('static/xception_hypermodel.h5', custom_objects={"f1_m": f1_m})
-breed_labels = ['Australian_terrier', 'Border_collie', 'Chihuahua', 'English_setter',
- 'French_bulldog', 'German_shepherd', 'Labrador_retriever', 'Rottweiler',
- 'Shih', 'Siberian_husky', 'Staffordshire_bullterrier', 'Yorkshire_terrier',
+breed_labels = ['Australian_terrier', 'English_setter',
+ 'French_bulldog', 'German_shepherd', 'Labrador_retriever', 
+ 'Shih-Tzu', 'Staffordshire_bullterrier', 
  'beagle', 'cocker_spaniel', 'golden_retriever']
 
 gradio_desc = 'This interface gives the possibility of determining a dog breed directly from a photo.'\
