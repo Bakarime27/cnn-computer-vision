@@ -1,4 +1,4 @@
 tensorflow-cpu
 h5py
-opencv-python-headless==4.4.0.46
+opencv-python-headless==3.4.10.37
 gradio==3.2
