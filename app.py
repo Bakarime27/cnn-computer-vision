@@ -32,11 +32,11 @@ breed_labels = ['Australian_terrier', 'English_setter',
  'Shih-Tzu', 'Staffordshire_bullterrier', 
  'beagle', 'cocker_spaniel', 'golden_retriever']
 
-gradio_desc = 'This interface gives the possibility of determining a dog breed directly from a photo.'\
+gradio_desc = 'This interface is buit to detect a dog breed directly from a photo.'\
                 'Just drag your image into the left frame and wait a few seconds !\n'\
-                'The model was trained on the 15 most popular dog breeds in France'
+                'The model was trained on 10 dog breeds labels'
                 
-gradio_article = ('<h3>General informations</h3><p>The objective of this Notebook is to detail the implementation'+
+""" gradio_article = ('<h3>General informations</h3><p>The objective of this Notebook is to detail the implementation'+
     ' of a dog breed detection algorithm on a photo, in order to speed up the work of indexing in a database.</p>'+
     '<h3>The constraints imposed</h3><p><ul><li>Pre-process the images with specific techniques (e.g. Whitening, equalization,'+
     ' possibly modification of the size of the images).</li>'+
@@ -44,7 +44,7 @@ gradio_article = ('<h3>General informations</h3><p>The objective of this Noteboo
     '<li>Implementation of 2 approaches to the use of CNNs :'+
     '<ul><li>Create a CNN neural network from scratch by optimizing the parameters.</li>'+
     '<li>Use the transfer learning and thus use an already trained network.</li>'+
-    '<li>Fine-tuning of the pre-trained model</li></ul></li></ul></p>')
+    '<li>Fine-tuning of the pre-trained model</li></ul></li></ul></p>') """
 
 # Define the full prediction function
 def breed_prediction(inp):
