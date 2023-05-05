@@ -33,18 +33,9 @@ breed_labels = ['Australian_terrier', 'English_setter',
  'beagle', 'cocker_spaniel', 'golden_retriever']
 
 gradio_desc = 'This interface is buit to detect a dog breed directly from a photo.'\
-                'Just drag your image into the left frame and wait a few seconds !\n'\
-                'The model was trained on 10 dog breeds labels'
+              'Just drag your image into the left frame and wait a few seconds !\n'\
+              'The model was trained on 10 dog breeds labels'
                 
-""" gradio_article = ('<h3>General informations</h3><p>The objective of this Notebook is to detail the implementation'+
-    ' of a dog breed detection algorithm on a photo, in order to speed up the work of indexing in a database.</p>'+
-    '<h3>The constraints imposed</h3><p><ul><li>Pre-process the images with specific techniques (e.g. Whitening, equalization,'+
-    ' possibly modification of the size of the images).</li>'+
-    '<li>Perform data augmentation (mirroring, cropping ...).</li>'+
-    '<li>Implementation of 2 approaches to the use of CNNs :'+
-    '<ul><li>Create a CNN neural network from scratch by optimizing the parameters.</li>'+
-    '<li>Use the transfer learning and thus use an already trained network.</li>'+
-    '<li>Fine-tuning of the pre-trained model</li></ul></li></ul></p>') """
 
 # Define the full prediction function
 def breed_prediction(inp):
@@ -92,7 +83,6 @@ iface = gr.Interface(
     verbose=True,
     title="Dogs breed prediction from picture\nwith Xception model",
     description=gradio_desc,
-    article=gradio_article,
     allow_flagging=False,
     allow_screenshot=True,
     server_port=INITIAL_PORT_VALUE,
